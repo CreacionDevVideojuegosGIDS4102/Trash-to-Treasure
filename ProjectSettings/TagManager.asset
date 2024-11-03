@@ -8,6 +8,7 @@ TagManager:
   - Organica
   - Inorganica
   - Charco
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -51,12 +52,12 @@ TagManager:
   - name: Ground
     uniqueID: 1931998595
     locked: 0
-  - name: Background
-    uniqueID: 3346796781
-    locked: 0
   - name: Objects
     uniqueID: 131547365
     locked: 0
   - name: Characters
     uniqueID: 3282978687
+    locked: 0
+  - name: Background
+    uniqueID: 3346796781
     locked: 0
