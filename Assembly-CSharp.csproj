@@ -65,8 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Nivel 1\Scripts\HealthBar.cs" />
-    <Compile Include="Assets\Nivel 1\Scripts\MovementController.cs" />
     <Compile Include="Assets\Nivel3\Scripts\HealthBarLevelThree.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\MovementController.cs" />
     <Compile Include="Assets\Nivel 1\Scripts\Follow.cs" />
     <Compile Include="Assets\Nivel3\Scripts\FollowLevelThree.cs" />
     <Compile Include="Assets\Nivel 1\Scripts\WasteController.cs" />
