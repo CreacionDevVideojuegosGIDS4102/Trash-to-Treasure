@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class HealthBarLevelThree : MonoBehaviour
 {
-    public MovementController playerController; 
+    public MovementControllerLevelThree playerController; 
     public Image meterImage; 
     public Text hpText; // Texto de HP en la barra
 
