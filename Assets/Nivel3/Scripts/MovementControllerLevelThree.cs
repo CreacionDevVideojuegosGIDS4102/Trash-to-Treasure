@@ -10,7 +10,7 @@ public class MovementControllerLevelThree : MonoBehaviour
     public float movementSpeed = 3.0f;
     public int playerLife = 100;
     public int organicWasteCollected = 0;
-    public int organicWasteToNextLevel = 30;
+    //public int organicWasteToNextLevel = 30;
 
     private Vector2 movement = new Vector2();
     private Rigidbody2D rb2D;
@@ -37,6 +37,7 @@ public class MovementControllerLevelThree : MonoBehaviour
     void Update()
     {
         UpdateState();
+        
     }
 
     private void UpdateState()
@@ -88,7 +89,19 @@ public class MovementControllerLevelThree : MonoBehaviour
     {
         if (organicWasteCounterText != null)
         {
-            organicWasteCounterText.text = "Recolectada: " + organicWasteCollected + "/30";
+            organicWasteCounterText.text = "Recolectada: " + organicWasteCollected + "/45";
+        }
+    }
+
+      public void CollectOrganicWaste()
+    {
+        organicWasteCollected++;
+        UpdateOrganicWasteCounter();
+
+        // Incrementa la vida en 10 cada vez que se recolectan 10 unidades
+        if (organicWasteCollected % 10 == 0)
+        {
+            IncreaseLife(10);
         }
     }
 
@@ -96,5 +109,15 @@ public class MovementControllerLevelThree : MonoBehaviour
     {
         playerLife -= amount;
         UpdateHealthBar();
+
+    }
+
+     private void IncreaseLife(int amount)
+    {
+        playerLife = Mathf.Min(playerLife + amount, 100); // No permite que la vida supere 100
+        UpdateHealthBar();
+
+        //Sonido sumar puntos
+        AudioManager.instance.PlaySoundEffect(AudioManager.instance.organicWasteCollectedClip);
     }
 }
