@@ -6,6 +6,7 @@ public class WasteController : MonoBehaviour
     public AudioClip inorganicWasteSound;
     private AudioSource audioSource;
     private MovementController movementController;
+    public PausaManager pausaM;
 
     void Start()
     {
@@ -20,6 +21,13 @@ public class WasteController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+
+        
+        if(pausaM.enPausa == true)
+        {
+            return;
+        }
+
         if (movementController == null) return;
 
         if (collision.gameObject.CompareTag("Player"))

@@ -1,0 +1,74 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|c:\\users\\diego\\onedrive\\documentos\\septiembre - diciembre 2024\\creaci\u00F3n de videojuegos\\proyecto\\trash-to-treasure\\assets\\nivel 1\\scripts\\pausamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|solutionrelative:assets\\nivel 1\\scripts\\pausamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|c:\\users\\diego\\onedrive\\documentos\\septiembre - diciembre 2024\\creaci\u00F3n de videojuegos\\proyecto\\trash-to-treasure\\assets\\nivel 1\\scripts\\wastecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|solutionrelative:assets\\nivel 1\\scripts\\wastecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": []
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "40195959-3d10-4a54-bd9c-3cabe0323eec",
+        "Display": 0,
+        "X": -5,
+        "Y": 0,
+        "Width": 1929,
+        "Height": 1036,
+        "WindowState": 2
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PausaManager.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\PausaManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Nivel 1\\Scripts\\PausaManager.cs",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\PausaManager.cs",
+              "RelativeToolTip": "Assets\\Nivel 1\\Scripts\\PausaManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:56:16.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WasteController.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\WasteController.cs",
+              "RelativeDocumentMoniker": "Assets\\Nivel 1\\Scripts\\WasteController.cs",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\WasteController.cs",
+              "RelativeToolTip": "Assets\\Nivel 1\\Scripts\\WasteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T06:53:21.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
