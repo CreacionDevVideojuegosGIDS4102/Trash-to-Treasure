@@ -4,58 +4,64 @@ using UnityEngine;
 
 public class FollowLevelThree : MonoBehaviour
 {
-    public GameObject target;
+    public GameObject target; // El objetivo que la cámara seguirá
+    public float speed = 5f;  // Velocidad del movimiento de la cámara
+    public bool encendida = true;
 
-    private float target_poseX;
-     private float target_poseY;
+    // Límites de la cámara
+    public float derechaMax = 441.8f;
+    public float izquierdaMax = -276.6f;
+    public float alturaMax = 28.1f;
+    public float alturaMin = -28.1f;
 
-     private float posX;
-      private float posY;
-
-      public float derechaMax;
-      public float izquierdaMax;
-
-      public float alturaMax;
-      public float alturaMin;
-
-      public float speed;
-      public bool encendida = true;
-    // Start is called before the first frame update
     void Start()
     {
-        
-    }
-
-    void Awake()
-    {
-        posX = target_poseX + derechaMax;
-        posY = target_poseY + alturaMin;
-        transform.position = Vector3.Lerp(transform.position, new Vector3(posX, posY, -1), 1);
-    }
-
-    void Move_Cam(){
-        if(encendida)
+        // Si no se asigna un objetivo manual, intenta encontrarlo automáticamente
+        if (target == null)
         {
-            if(target){
-                target_poseX = target.transform.position.x;
-                target_poseY = target.transform.position.y;
+            GameObject foundTarget = GameObject.FindWithTag("Player");
 
-                if(target_poseX > derechaMax && target_poseX < izquierdaMax)
-                {
-                    posX = target_poseX;
-                }
-                if (target_poseY < alturaMax && target_poseY > alturaMin)
-                {
-                    posY = target_poseY;
-                }
+            // Verifica que el objetivo encontrado no sea el SpawnPoint
+            if (foundTarget != null && foundTarget.name != "SpawnPoint")
+            {
+                target = foundTarget;
+                Debug.Log("Objetivo encontrado automáticamente: " + target.name);
             }
-
-            transform.position = Vector3.Lerp(transform.position, new Vector3(posX, posY, -1), speed*Time.deltaTime);
+            else
+            {
+                Debug.LogWarning("El objetivo encontrado es el SpawnPoint o no se encontró ningún objetivo.");
+            }
         }
     }
 
+    public void AssignPlayer(GameObject playerInstance)
+    {
+        if (playerInstance != null)
+        {
+            target = playerInstance;
+            Debug.Log("Nuevo objetivo asignado a la cámara: " + target.name);
+        }
+        else
+        {
+            Debug.LogError("Intento de asignar un objetivo nulo.");
+        }
+    }
 
-    // Update is called once per frame
+    void Move_Cam()
+    {
+        if (encendida && target != null)
+        {
+            Vector3 targetPosition = target.transform.position;
+
+            // Limitar la posición dentro de los límites definidos
+            targetPosition.x = Mathf.Clamp(targetPosition.x, izquierdaMax, derechaMax);
+            targetPosition.y = Mathf.Clamp(targetPosition.y, alturaMin, alturaMax);
+            targetPosition.z = -10f; // Ajusta la posición Z para 2D
+
+            transform.position = Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
+        }
+    }
+
     void Update()
     {
         Move_Cam();

@@ -659,7 +659,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   characters:
   - {fileID: 1673517498663946743, guid: 1d6dc2df4065dad4b8a8b5063fa86b65, type: 3}
-  - {fileID: 695815523114060107, guid: c5e442e3bd403334dbb5b6990788fd26, type: 3}
+  - {fileID: 3626917432868380, guid: e661cbb4ef5c230448d39575af422576, type: 3}
+  defaultLevel: LevelThree
 --- !u!1 &824863296
 GameObject:
   m_ObjectHideFlags: 0

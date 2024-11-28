@@ -64,21 +64,27 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.44f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Nivel 1\Scripts\HealthBar.cs" />
     <Compile Include="Assets\Nivel3\Scripts\HealthBarLevelThree.cs" />
-    <Compile Include="Assets\Nivel 1\Scripts\MovementController.cs" />
-    <Compile Include="Assets\Nivel 1\Scripts\Follow.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\WasteControllerLevel1.cs" />
+    <Compile Include="Assets\LevelController.cs" />
     <Compile Include="Assets\Nivel3\Scripts\FollowLevelThree.cs" />
+    <Compile Include="Assets\Follow.cs" />
     <Compile Include="Assets\PuntuacionesManager\RankingManager.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\HealthBarLevel1.cs" />
+    <Compile Include="Assets\HealthBar.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\ToxicPoolControllerLevel1.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\MovementControllerLevel1.cs" />
     <Compile Include="Assets\Nivel3\Scripts\ToxicPoolControllerLevelThree.cs" />
-    <Compile Include="Assets\Nivel 1\Scripts\WasteController.cs" />
     <Compile Include="Assets\SeleccionPersonaje\CharacterLoader.cs" />
-    <Compile Include="Assets\Nivel 1\Scripts\ToxicPoolController.cs" />
     <Compile Include="Assets\ReglasJuego\Scripts\PantallaReglas.cs" />
     <Compile Include="Assets\PuntuacionesManager\PuntuacionManager.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\FollowLevel1.cs" />
     <Compile Include="Assets\PuntuacionesManager\MenuManager.cs" />
     <Compile Include="Assets\Nivel3\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\MovementController.cs" />
+    <Compile Include="Assets\ScriptAssigner.cs" />
     <Compile Include="Assets\Nivel3\Scripts\MovementControllerLevelThree.cs" />
+    <Compile Include="Assets\WasteController.cs" />
     <Compile Include="Assets\SeleccionPersonaje\CharacterSelectionManager.cs" />
     <Compile Include="Assets\Nivel3\Scripts\WasteControllerLevelThree.cs" />
   </ItemGroup>
@@ -930,6 +936,10 @@
       <HintPath>Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+      <HintPath>Library\ScriptAssemblies\com.unity.cinemachine.editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.Burst.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Burst.Editor.dll</HintPath>
       <Private>False</Private>
@@ -998,10 +1008,6 @@
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.VisualScripting.Flow.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.InternalAPIEngineBridge.001">
       <HintPath>Library\ScriptAssemblies\Unity.InternalAPIEngineBridge.001.dll</HintPath>
       <Private>False</Private>
@@ -1010,12 +1016,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.Mathematics.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.2D.Common.Runtime">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
+    <Reference Include="Unity.VisualScripting.Flow.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.UI">
-      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    <Reference Include="Unity.2D.Common.Runtime">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Common.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.Tilemap.Extras.Editor">
@@ -1024,6 +1030,10 @@
     </Reference>
     <Reference Include="Unity.Timeline">
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.SettingsProvider.Editor">
@@ -1076,6 +1086,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.State.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Cinemachine">
+      <HintPath>Library\ScriptAssemblies\Cinemachine.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.2D.SpriteShape.Editor">
