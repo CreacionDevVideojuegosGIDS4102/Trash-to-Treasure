@@ -4,7 +4,6 @@ public class CharacterLoader : MonoBehaviour
 {
     public GameObject[] characters; // Prefabs de los personajes
     public Transform spawnPoint;   // Punto de aparición del personaje
-    public FollowLevelThree cameraScript; // Referencia al script de la cámara
 
     private GameObject playerInstance; // Referencia al personaje instanciado
 
@@ -27,16 +26,6 @@ public class CharacterLoader : MonoBehaviour
         playerInstance = Instantiate(characters[selectedCharacterIndex], spawnPoint.position, Quaternion.identity);
         playerInstance.name = "Player"; // Asegura que el objeto instanciado se llame Player
         playerInstance.tag = "Player";
-
-        // Asigna el personaje instanciado como objetivo de la cámara
-        if (cameraScript != null)
-        {
-            cameraScript.AssignPlayer(playerInstance);
-        }
-        else
-        {
-            Debug.LogError("No se encontró el script FollowLevelThree.");
-        }
     }
 
     void AssignScripts()
@@ -56,27 +45,38 @@ public class CharacterLoader : MonoBehaviour
             case "LevelOne":
                 playerInstance.AddComponent<MovementControllerLevel1>();
                 Debug.Log("Script asignado: MovementControllerLevel1.");
+
+                // Asigna el script FollowLevelOne a la cámara
+                FollowLevelOne cameraFollowOne = Camera.main.GetComponent<FollowLevelOne>();
+                if (cameraFollowOne != null)
+                {
+                    cameraFollowOne.AssignPlayer(playerInstance);
+                }
+                else
+                {
+                    Debug.LogError("No se encontró el script FollowLevelOne en la cámara principal.");
+                }
                 break;
 
             case "LevelThree":
                 playerInstance.AddComponent<MovementControllerLevelThree>();
                 Debug.Log("Script asignado: MovementControllerLevelThree.");
+
+                // Asigna el script FollowLevelThree a la cámara
+                FollowLevelThree cameraFollowThree = Camera.main.GetComponent<FollowLevelThree>();
+                if (cameraFollowThree != null)
+                {
+                    cameraFollowThree.AssignPlayer(playerInstance);
+                }
+                else
+                {
+                    Debug.LogError("No se encontró el script FollowLevelThree en la cámara principal.");
+                }
                 break;
 
             default:
                 Debug.LogWarning("No se han configurado scripts para este nivel.");
                 break;
-        }
-
-        // Asigna el jugador a la cámara manualmente
-        FollowLevelThree cameraFollow = Camera.main.GetComponent<FollowLevelThree>();
-        if (cameraFollow != null)
-        {
-            cameraFollow.AssignPlayer(playerInstance);
-        }
-        else
-        {
-            Debug.LogError("No se encontró el script FollowLevelThree en la cámara principal.");
         }
     }
 }

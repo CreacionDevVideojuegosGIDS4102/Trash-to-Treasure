@@ -2,74 +2,77 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowLevel1 : MonoBehaviour
+public class FollowLevelOne : MonoBehaviour
 {
     public GameObject target; // El jugador que la cámara debe seguir
-
-    private float target_poseX;
-    private float posX;
-
     public float derechaMax = 197.3f; // Límite derecho de la cámara
-    public float izquierdaMax = -13.6f; // Límite izquierdo de la cámara
+    public float izquierdaMax = -16.4f; // Límite izquierdo de la cámara
+    public float alturaMax = 25.9f; // Altura máxima
+    public float alturaMin = -25.9f; // Altura mínima
+    public float speed = 5f; // Velocidad de la cámara
+    public bool encendida = true; // Activar/desactivar el movimiento de la cámara
 
-    public float speed = 8f; // Velocidad de la cámara
-    public bool encendida = true; // Bandera para activar/desactivar el movimiento de la cámara
-
-    // Start is called before the first frame update
     void Start()
     {
-        // Buscar el objeto con la etiqueta "Player"
-        target = GameObject.FindGameObjectWithTag("Player");
-
+        // Intentar encontrar el objetivo automáticamente si no está asignado
         if (target == null)
         {
-            Debug.LogError("No se encontró el objeto con la etiqueta 'Player'. Verifica si el jugador tiene la etiqueta correcta.");
+            GameObject foundTarget = GameObject.FindWithTag("Player");
+
+            // Asegurarse de que el objetivo no sea el SpawnPoint
+            if (foundTarget != null && foundTarget.name != "SpawnPoint")
+            {
+                target = foundTarget;
+                Debug.Log("Objetivo encontrado automáticamente: " + target.name);
+            }
+            else
+            {
+                Debug.LogWarning("El objetivo encontrado es el SpawnPoint o no se encontró ningún objetivo.");
+            }
         }
 
-        // Asegurarnos de que la cámara comienza en la posición del jugador o dentro de los límites
-        transform.position = new Vector3(
-            Mathf.Clamp(target.transform.position.x, izquierdaMax, derechaMax), 
-            transform.position.y, 
-            transform.position.z
-        );
+        // Ajustar la posición inicial de la cámara
+        if (target != null)
+        {
+            transform.position = new Vector3(
+                Mathf.Clamp(target.transform.position.x, izquierdaMax, derechaMax),
+                Mathf.Clamp(target.transform.position.y, alturaMin, alturaMax),
+                transform.position.z
+            );
+        }
     }
 
-    // Método para mover la cámara
+    public void AssignPlayer(GameObject playerInstance)
+    {
+        if (playerInstance != null)
+        {
+            target = playerInstance;
+            Debug.Log("Nuevo objetivo asignado a la cámara: " + target.name);
+        }
+        else
+        {
+            Debug.LogError("Intento de asignar un objetivo nulo.");
+        }
+    }
+
     void Move_Cam()
     {
         if (encendida && target != null)
         {
-            // Obtener la posición X del objetivo (jugador)
-            target_poseX = target.transform.position.x;
+            Vector3 targetPosition = target.transform.position;
 
-            // Limitar el movimiento de la cámara en el eje X, pero permitir que se mueva dentro de los límites
-            if (target_poseX > izquierdaMax && target_poseX < derechaMax)
-            {
-                posX = target_poseX; // La cámara sigue al jugador en el eje X
-            }
-            else if (target_poseX <= izquierdaMax)
-            {
-                posX = izquierdaMax; // Si el jugador llega al límite izquierdo, la cámara se detiene en ese límite
-            }
-            else if (target_poseX >= derechaMax)
-            {
-                posX = derechaMax; // Si el jugador llega al límite derecho, la cámara se detiene en ese límite
-            }
+            // Limitar la posición dentro de los límites
+            targetPosition.x = Mathf.Clamp(targetPosition.x, izquierdaMax, derechaMax);
+            targetPosition.y = Mathf.Clamp(targetPosition.y, alturaMin, alturaMax);
+            targetPosition.z = transform.position.z;
 
             // Suavizar el movimiento de la cámara
-            transform.position = Vector3.Lerp(transform.position, new Vector3(posX, transform.position.y, transform.position.z), speed * Time.deltaTime);
-
-            // Debug para ver las posiciones
-            Debug.Log("Posición del jugador: " + target_poseX);
-            Debug.Log("Posición actual de la cámara: " + transform.position.x);
-            Debug.Log("Nueva posición de la cámara: " + posX);
+            transform.position = Vector3.Lerp(transform.position, targetPosition, speed * Time.deltaTime);
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Llamar al método que mueve la cámara
         Move_Cam();
     }
 }
