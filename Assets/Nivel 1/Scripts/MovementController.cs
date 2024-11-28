@@ -1,13 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement; // Para cambiar de escena.
 
 public class MovementController : MonoBehaviour
 {
     public Text organicWasteCounterText;
     public Image healthBar;
-    public float movementSpeed = 3.0f;
+    public GameObject winPanel; // Asocia tu panel desde el inspector.
+    public float movementSpeed = 3.0f; // Controla la velocidad del jugador.
     public int playerLife = 100;
     public int organicWasteCollected = 0;
     public int organicWasteToNextLevel = 30;
@@ -32,6 +32,11 @@ public class MovementController : MonoBehaviour
         animator = GetComponent<Animator>();
         UpdateOrganicWasteCounter();
         UpdateHealthBar();
+
+        if (winPanel != null)
+        {
+            winPanel.SetActive(false); // Asegúrate de que el panel esté oculto al inicio.
+        }
     }
 
     void Update()
@@ -88,7 +93,13 @@ public class MovementController : MonoBehaviour
     {
         if (organicWasteCounterText != null)
         {
-            organicWasteCounterText.text = "Recolectada: " + organicWasteCollected + "/30";
+            organicWasteCounterText.text = "Recolectada: " + organicWasteCollected + "/" + organicWasteToNextLevel;
+        }
+
+        // Si recolectaste toda la basura orgánica, muestra el mensaje de victoria.
+        if (organicWasteCollected >= organicWasteToNextLevel)
+        {
+            ShowWinPanel();
         }
     }
 
@@ -96,5 +107,33 @@ public class MovementController : MonoBehaviour
     {
         playerLife -= amount;
         UpdateHealthBar();
+    }
+
+    public void CollectOrganicWaste()
+    {
+        organicWasteCollected++;
+        UpdateOrganicWasteCounter();
+    }
+
+    private void ShowWinPanel()
+    {
+        if (winPanel != null)
+        {
+            winPanel.SetActive(true);
+            Time.timeScale = 0; // Pausa el juego mientras se muestra la ventana.
+        }
+    }
+
+    // Métodos para los botones.
+    public void GoToNextLevel()
+    {
+        Time.timeScale = 1; // Reactiva el tiempo del juego.
+        SceneManager.LoadScene("LevelTwo"); // Cambia por el nombre de tu escena.
+    }
+
+    public void GoToMainMenu()
+    {
+        Time.timeScale = 1; // Reactiva el tiempo del juego.
+        SceneManager.LoadScene("Menú"); // Cambia por el nombre de tu menú.
     }
 }

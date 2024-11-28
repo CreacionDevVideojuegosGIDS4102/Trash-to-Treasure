@@ -155,7 +155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2185950895282931846, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
       propertyPath: m_Name
-      value: 05-Apple (3)
+      value: Apple (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7046342379832910670, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
       propertyPath: m_LocalScale.x
@@ -215,6 +215,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2185950895282931846, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
       insertIndex: -1
       addedObject: {fileID: 668865478}
+    - targetCorrespondingSourceObject: {fileID: 2185950895282931846, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 668865482}
   m_SourcePrefab: {fileID: 100100000, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
 --- !u!4 &56426267 stripped
 Transform:
@@ -343,8 +346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &92466878 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5528974074013988882, guid: e0c8255943f95544fb1c1fbf5d8c9454, type: 3}
@@ -388,8 +390,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &92466893
 AudioSource:
   m_ObjectHideFlags: 0
@@ -524,8 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &141787028 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6225612577451529035, guid: 9e8517fb1b6deb54d85983ca70643ddb, type: 3}
@@ -852,6 +852,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &244869628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 244869629}
+  - component: {fileID: 244869631}
+  - component: {fileID: 244869630}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &244869629
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244869628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 809536381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0000076294, y: 69.3}
+  m_SizeDelta: {x: 438.0096, y: 107.1699}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &244869630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244869628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: bf763ce447227fb49822f14e3d521893, type: 3}
+    m_FontSize: 30
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 3
+    m_MaxSize: 60
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Salvaste esta \xE1rea del planeta"
+--- !u!222 &244869631
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 244869628}
+  m_CullTransparentMesh: 1
 --- !u!1 &312194949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3373556469896222701, guid: 09b7ace451390f04eaeb9254b9ce199d, type: 3}
@@ -890,8 +969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &355888852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1055,6 +1133,85 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1288286657365541556, guid: 412f5088a228a38468f5e091c8268ff7, type: 3}
   m_PrefabInstance: {fileID: 387805544}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &388634218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388634219}
+  - component: {fileID: 388634221}
+  - component: {fileID: 388634220}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &388634219
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388634218}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 582897285}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &388634220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388634218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Siguiente Nivel
+--- !u!222 &388634221
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388634218}
+  m_CullTransparentMesh: 1
 --- !u!4 &401365085 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3630648011057937183, guid: f23ebed9a7893be409e8eda773a0097e, type: 3}
@@ -1146,6 +1303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 0}
   healthBar: {fileID: 0}
+  winPanel: {fileID: 0}
   movementSpeed: 3
   playerLife: 100
   organicWasteCollected: 0
@@ -2121,8 +2279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &518758186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4076898473148462014, guid: 49dfbdf2f95b8344596d4cd145c4c702, type: 3}
@@ -2245,6 +2402,139 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3630648011057937183, guid: f23ebed9a7893be409e8eda773a0097e, type: 3}
   m_PrefabInstance: {fileID: 1999614313}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &582897284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 582897285}
+  - component: {fileID: 582897288}
+  - component: {fileID: 582897287}
+  - component: {fileID: 582897286}
+  m_Layer: 5
+  m_Name: SN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &582897285
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582897284}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 388634219}
+  m_Father: {fileID: 809536381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -139, y: -51.4}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &582897286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582897284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 582897287}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1995975893}
+        m_TargetAssemblyTypeName: MovementController, Assembly-CSharp
+        m_MethodName: GoToNextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &582897287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582897284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 504677b0506449e4590f944358a6553e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &582897288
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582897284}
+  m_CullTransparentMesh: 1
 --- !u!1001 &586891003
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2451,8 +2741,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &668865465 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2185950895282931846, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
@@ -2491,8 +2780,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
+--- !u!114 &668865482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 668865465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wasteName: Apple (3)
 --- !u!1001 &679037494
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2623,6 +2924,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 0}
   healthBar: {fileID: 0}
+  winPanel: {fileID: 0}
   movementSpeed: 3
   playerLife: 100
   organicWasteCollected: 0
@@ -2895,8 +3197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &781113740
 GameObject:
   m_ObjectHideFlags: 0
@@ -3228,6 +3529,84 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7399690114181967399, guid: 4483f6f3b15110147b5ea8bc75a5768f, type: 3}
   m_PrefabInstance: {fileID: 803477516}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &809536380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 809536381}
+  - component: {fileID: 809536383}
+  - component: {fileID: 809536382}
+  m_Layer: 5
+  m_Name: Panel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &809536381
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809536380}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 244869629}
+  - {fileID: 582897285}
+  - {fileID: 1607214407}
+  m_Father: {fileID: 1824931145}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 20.300049}
+  m_SizeDelta: {x: -279.98828, y: -192.9248}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &809536382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809536380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &809536383
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809536380}
+  m_CullTransparentMesh: 1
 --- !u!1001 &810898316
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3350,8 +3729,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &817641564
 AudioSource:
   m_ObjectHideFlags: 0
@@ -3570,8 +3948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &884431030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3935,8 +4312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!114 &937083025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3949,8 +4325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &937083026
 AudioSource:
   m_ObjectHideFlags: 0
@@ -4047,6 +4422,85 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &943884566
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 943884567}
+  - component: {fileID: 943884569}
+  - component: {fileID: 943884568}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &943884567
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943884566}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1607214407}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &943884568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943884566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "Men\xFA Principal"
+--- !u!222 &943884569
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943884566}
+  m_CullTransparentMesh: 1
 --- !u!4 &976984357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1872431991335084782, guid: 1932fa55c0b478045a86f62da6c937ee, type: 3}
@@ -4260,8 +4714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &1085911001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21763,8 +22216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &1212170496
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21923,8 +22375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!4 &1249408143 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5032854240234004127, guid: f2d5a9b342ba14a498a9f36f479c5179, type: 3}
@@ -21971,6 +22422,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 0}
   healthBar: {fileID: 0}
+  winPanel: {fileID: 0}
   movementSpeed: 3
   playerLife: 100
   organicWasteCollected: 0
@@ -22143,8 +22595,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &1275740266 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6172550974761184430, guid: 412f5088a228a38468f5e091c8268ff7, type: 3}
@@ -22183,8 +22634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &1297884635
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22353,8 +22803,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &1325193924
 GameObject:
   m_ObjectHideFlags: 0
@@ -22596,8 +23045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &1401861412
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22715,8 +23163,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &1404724862
 GameObject:
   m_ObjectHideFlags: 0
@@ -59743,11 +60190,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 165123284908035641, guid: b23b29403d46edf4b94a8d0eace65cef, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -47.9
+      value: -49.9
       objectReference: {fileID: 0}
     - target: {fileID: 165123284908035641, guid: b23b29403d46edf4b94a8d0eace65cef, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.9
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 165123284908035641, guid: b23b29403d46edf4b94a8d0eace65cef, type: 3}
       propertyPath: m_LocalPosition.z
@@ -68210,8 +68657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &1527688526
 GameObject:
   m_ObjectHideFlags: 0
@@ -68288,8 +68734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &1586124706
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68418,8 +68863,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &1586124721
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68554,8 +68998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &1586770770
 AudioSource:
   m_ObjectHideFlags: 0
@@ -68783,6 +69226,139 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603784622}
+  m_CullTransparentMesh: 1
+--- !u!1 &1607214406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1607214407}
+  - component: {fileID: 1607214410}
+  - component: {fileID: 1607214409}
+  - component: {fileID: 1607214408}
+  m_Layer: 5
+  m_Name: MP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1607214407
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607214406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 943884567}
+  m_Father: {fileID: 809536381}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 139, y: -51.4}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1607214408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607214406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1607214409}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1995975893}
+        m_TargetAssemblyTypeName: MovementController, Assembly-CSharp
+        m_MethodName: GoToMainMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1607214409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607214406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 504677b0506449e4590f944358a6553e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1607214410
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1607214406}
   m_CullTransparentMesh: 1
 --- !u!1001 &1610814358
 PrefabInstance:
@@ -69192,6 +69768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 0}
   healthBar: {fileID: 0}
+  winPanel: {fileID: 0}
   movementSpeed: 3
   playerLife: 100
   organicWasteCollected: 0
@@ -69364,8 +69941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &1630110450
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69480,8 +70056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &1661578943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -69781,6 +70356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 0}
   healthBar: {fileID: 0}
+  winPanel: {fileID: 0}
   movementSpeed: 3
   playerLife: 100
   organicWasteCollected: 0
@@ -69953,8 +70529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &1717147383
 AudioSource:
   m_ObjectHideFlags: 0
@@ -70168,8 +70743,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &1760659871
 GameObject:
   m_ObjectHideFlags: 0
@@ -70416,8 +70990,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!224 &1824931145 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 3129102106980310222, guid: 340639a50217e8a48bb34659e8f4cde1, type: 3}
@@ -70461,8 +71034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &1858355766
 AudioSource:
   m_ObjectHideFlags: 0
@@ -70687,8 +71259,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &1893230249
 AudioSource:
   m_ObjectHideFlags: 0
@@ -70902,8 +71473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &1905516608 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5209965622045074879, guid: 18fb186b2d29cfe4a88954431f4d920b, type: 3}
@@ -70942,8 +71512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &1933821282 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5209965622045074879, guid: 18fb186b2d29cfe4a88954431f4d920b, type: 3}
@@ -70987,8 +71556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &1946902794
 AudioSource:
   m_ObjectHideFlags: 0
@@ -71207,8 +71775,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &1987435700
 AudioSource:
   m_ObjectHideFlags: 0
@@ -71343,8 +71910,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 8300000, guid: 5f8d18fde0ccc8e428ce508802cbd3c4, type: 3}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!82 &1990338768
 AudioSource:
   m_ObjectHideFlags: 0
@@ -71460,6 +72026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 922203724}
   healthBar: {fileID: 4523771255054186359}
+  winPanel: {fileID: 0}
   movementSpeed: 7
   playerLife: 100
   organicWasteCollected: 0
@@ -71572,8 +72139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 1310153658}
+  wasteName: Apple (3)
 --- !u!1001 &1999614313
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71691,8 +72257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &2041044674 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5162500944450989105, guid: 1e26b954b79d3fe40a072450dcf3ec1a, type: 3}
@@ -71731,8 +72296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &2047907514
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71850,8 +72414,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &2060332178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7955307262408950053, guid: 09b7ace451390f04eaeb9254b9ce199d, type: 3}
@@ -71890,8 +72453,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &2071285796
 GameObject:
   m_ObjectHideFlags: 0
@@ -131394,8 +131956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &2097083662 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6225612577451529035, guid: 9e8517fb1b6deb54d85983ca70643ddb, type: 3}
@@ -131434,8 +131995,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1 &2140561409 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2185950895282931846, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
@@ -131474,8 +132034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e254fc682423d264ea09f217af26ee69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inorganicWasteSound: {fileID: 0}
-  pausaM: {fileID: 0}
+  wasteName: Apple (3)
 --- !u!1001 &2130087212327904557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -131679,6 +132238,9 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3129102106980310222, guid: 340639a50217e8a48bb34659e8f4cde1, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 809536381}
     - targetCorrespondingSourceObject: {fileID: 3129102106980310222, guid: 340639a50217e8a48bb34659e8f4cde1, type: 3}
       insertIndex: -1
       addedObject: {fileID: 922203723}

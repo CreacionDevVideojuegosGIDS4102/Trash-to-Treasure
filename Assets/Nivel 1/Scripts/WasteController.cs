@@ -1,17 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class WasteController : MonoBehaviour
+
+public class WasteControllerLevelThree : MonoBehaviour
 {
-    public AudioClip inorganicWasteSound;
-    private AudioSource audioSource;
+    public string wasteName = "Apple (3)"; // Nombre del objeto específico.
+
     private MovementController movementController;
-    public PausaManager pausaM;
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-
         GameObject player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
         {
@@ -21,13 +19,6 @@ public class WasteController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-
-        
-        if(pausaM.enPausa == true)
-        {
-            return;
-        }
-
         if (movementController == null) return;
 
         if (collision.gameObject.CompareTag("Player"))
@@ -35,16 +26,11 @@ public class WasteController : MonoBehaviour
             if (gameObject.CompareTag("Organica"))
             {
                 Destroy(gameObject);
-                movementController.organicWasteCollected++;
-                movementController.UpdateOrganicWasteCounter();
+                movementController.CollectOrganicWaste();
             }
-            else if (gameObject.CompareTag("Inorganica"))
+            else if (gameObject.CompareTag("Carnibora"))
             {
-                if (inorganicWasteSound != null && audioSource != null)
-                {
-                    audioSource.PlayOneShot(inorganicWasteSound, 0.8f);
-                }
-                movementController.ReduceLife(10);
+                movementController.ReduceLife(30);
             }
         }
     }

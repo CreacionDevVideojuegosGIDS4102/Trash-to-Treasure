@@ -1,12 +1,105 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|c:\\users\\diego\\onedrive\\documentos\\septiembre - diciembre 2024\\creaci\u00F3n de videojuegos\\proyecto\\trash-to-treasure\\assets\\nivel 1\\scripts\\cambiarnivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|solutionrelative:assets\\nivel 1\\scripts\\cambiarnivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|c:\\users\\diego\\onedrive\\documentos\\septiembre - diciembre 2024\\creaci\u00F3n de videojuegos\\proyecto\\trash-to-treasure\\assets\\nivel 1\\scripts\\controladorniveles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|solutionrelative:assets\\nivel 1\\scripts\\controladorniveles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|c:\\users\\diego\\onedrive\\documentos\\septiembre - diciembre 2024\\creaci\u00F3n de videojuegos\\proyecto\\trash-to-treasure\\assets\\nivel 1\\scripts\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|solutionrelative:assets\\nivel 1\\scripts\\movementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|c:\\users\\diego\\onedrive\\documentos\\septiembre - diciembre 2024\\creaci\u00F3n de videojuegos\\proyecto\\trash-to-treasure\\assets\\nivel 1\\scripts\\wastecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|solutionrelative:assets\\nivel 1\\scripts\\wastecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|c:\\users\\diego\\onedrive\\documentos\\septiembre - diciembre 2024\\creaci\u00F3n de videojuegos\\proyecto\\trash-to-treasure\\assets\\nivel 1\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B2653735-ED93-DA41-9249-EAD2813DEF3C}|Assembly-CSharp.csproj|solutionrelative:assets\\nivel 1\\scripts\\healthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ControladorNiveles.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\ControladorNiveles.cs",
+              "RelativeDocumentMoniker": "Assets\\Nivel 1\\Scripts\\ControladorNiveles.cs",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\ControladorNiveles.cs",
+              "RelativeToolTip": "Assets\\Nivel 1\\Scripts\\ControladorNiveles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T06:04:31.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "cambiarNivel.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\cambiarNivel.cs",
+              "RelativeDocumentMoniker": "Assets\\Nivel 1\\Scripts\\cambiarNivel.cs",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\cambiarNivel.cs",
+              "RelativeToolTip": "Assets\\Nivel 1\\Scripts\\cambiarNivel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T06:04:16.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "HealthBar.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\HealthBar.cs",
+              "RelativeDocumentMoniker": "Assets\\Nivel 1\\Scripts\\HealthBar.cs",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\HealthBar.cs",
+              "RelativeToolTip": "Assets\\Nivel 1\\Scripts\\HealthBar.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T22:45:34.322Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovementController.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\MovementController.cs",
+              "RelativeDocumentMoniker": "Assets\\Nivel 1\\Scripts\\MovementController.cs",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\MovementController.cs",
+              "RelativeToolTip": "Assets\\Nivel 1\\Scripts\\MovementController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T22:04:06.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WasteController.cs",
+              "DocumentMoniker": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\WasteController.cs",
+              "RelativeDocumentMoniker": "Assets\\Nivel 1\\Scripts\\WasteController.cs",
+              "ToolTip": "C:\\Users\\diego\\OneDrive\\Documentos\\Septiembre - Diciembre 2024\\Creaci\u00F3n de videojuegos\\PROYECTO\\Trash-to-Treasure\\Assets\\Nivel 1\\Scripts\\WasteController.cs",
+              "RelativeToolTip": "Assets\\Nivel 1\\Scripts\\WasteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T21:54:38.785Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -66,6 +66,8 @@
     <Compile Include="Assets\Nivel 1\Scripts\levelManager.cs" />
     <Compile Include="Assets\Nivel 1\Scripts\Follow.cs" />
     <Compile Include="Assets\Nivel3\Scripts\FollowLevelThree.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\cambiarNivel.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\ControladorNiveles.cs" />
     <Compile Include="Assets\Nivel 1\Scripts\WasteController.cs" />
     <Compile Include="Assets\Nivel 1\Scripts\ToxicPoolController.cs" />
     <Compile Include="Assets\Nivel 1\Scripts\PausaManager.cs" />
