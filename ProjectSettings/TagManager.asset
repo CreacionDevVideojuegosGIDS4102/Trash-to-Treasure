@@ -10,6 +10,7 @@ TagManager:
   - Charco
   - Enemy
   - Carnibora
+  - Cambio
   layers:
   - Default
   - TransparentFX

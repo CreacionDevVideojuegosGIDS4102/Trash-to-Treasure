@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class MovementControllerLevel1 : MonoBehaviour
 {
@@ -101,6 +103,12 @@ public class MovementControllerLevel1 : MonoBehaviour
         if (organicWasteCollected % 10 == 0)
         {
             IncreaseLife(10);
+        }
+        // Verifica si ya se recolectaron todas
+        if (organicWasteCollected >= organicWasteToNextLevel)
+        {
+            Debug.Log("Nivel completado, cambiando al siguiente nivel");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 

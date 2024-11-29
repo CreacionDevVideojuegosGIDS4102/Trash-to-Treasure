@@ -157,6 +157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 05-Apple (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2185950895282931846, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
+      propertyPath: m_TagString
+      value: Cambio
+      objectReference: {fileID: 0}
     - target: {fileID: 7046342379832910670, guid: d38e223eb062eab4f8bb7e05dd2d416e, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -70362,6 +70366,7 @@ GameObject:
   - component: {fileID: 1656512657}
   - component: {fileID: 1656512659}
   - component: {fileID: 1656512658}
+  - component: {fileID: 1656512660}
   m_Layer: 8
   m_Name: SpawnPoint
   m_TagString: Player
@@ -70411,10 +70416,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 3014417673264035543}
   healthBar: {fileID: 4523771255054186359}
-  movementSpeed: 5
+  movementSpeed: 8
   playerLife: 100
   organicWasteCollected: 0
   organicWasteToNextLevel: 30
+--- !u!114 &1656512660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1656512656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9d165366eb963948a60c76815ea6dd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1661578943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -132957,7 +132974,7 @@ PrefabInstance:
     - target: {fileID: 5679321157964865706, guid: 340639a50217e8a48bb34659e8f4cde1, type: 3}
       propertyPath: playerController
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1656512659}
     - target: {fileID: 7406821134732284548, guid: 340639a50217e8a48bb34659e8f4cde1, type: 3}
       propertyPath: m_Sprite
       value: 

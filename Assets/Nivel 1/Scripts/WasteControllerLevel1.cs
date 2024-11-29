@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WasteControllerLevel1 : MonoBehaviour
 {
@@ -37,6 +38,11 @@ public class WasteControllerLevel1 : MonoBehaviour
                     audioSource.PlayOneShot(inorganicWasteSound, 0.8f);
                 }
                 movementController.ReduceLife(10);
+            }
+            else if (gameObject.CompareTag("Cambio"))
+            {
+                // Cambiar al siguiente nivel
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
     }

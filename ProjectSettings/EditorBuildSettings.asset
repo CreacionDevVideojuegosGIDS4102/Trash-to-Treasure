@@ -18,15 +18,15 @@ EditorBuildSettings:
     path: Assets/Menus/SelectNivel/SelectNivel.unity
     guid: 155870eabd3cc294697f89dda801a253
   - enabled: 1
-    path: Assets/Menus/SelectNivel/Nivel 1/PantallaReglas.unity
+    path: Assets/Nivel 1/PantallaReglas.unity
     guid: 49f91220daeef124ebddf1ae407e02a1
   - enabled: 1
-    path: Assets/Menus/SelectNivel/Nivel 1/LevelOne.unity
+    path: Assets/Nivel 1/LevelOne.unity
     guid: 8031f01717c85734fa086e5d334eb181
   - enabled: 1
     path: Assets/Nivel2/LevelTwo.unity
     guid: d2da5db2f6df013458a97cccff04a10a
   - enabled: 1
-    path: Assets/Menus/SelectNivel/Nivel 1/LevelThree.unity
+    path: Assets/Nivel 1/LevelThree.unity
     guid: c5ebca199928be043b319941f58d5e0f
   m_configObjects: {}
