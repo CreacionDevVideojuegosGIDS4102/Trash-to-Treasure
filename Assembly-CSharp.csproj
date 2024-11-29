@@ -65,30 +65,32 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Menus\Menú\PausaManager.cs" />
-    <Compile Include="Assets\Menus\SelectNivel\Nivel 1\Scripts\WasteControllerLevel1.cs" />
     <Compile Include="Assets\Nivel3\Scripts\HealthBarLevelThree.cs" />
-    <Compile Include="Assets\LevelController.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\WasteControllerLevel1.cs" />
+    <Compile Include="Assets\MenuOpciones\Scenes\Menú\MenúOpciones.cs" />
+    <Compile Include="Assets\Nivel2\Scrips\MovementController.cs" />
     <Compile Include="Assets\Nivel3\Scripts\FollowLevelThree.cs" />
-    <Compile Include="Assets\Follow.cs" />
     <Compile Include="Assets\PuntuacionesManager\RankingManager.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\HealthBarLevel1.cs" />
+    <Compile Include="Assets\Nivel2\Scrips\Follow.cs" />
     <Compile Include="Assets\Menus\Menú\ControladorNiveles.cs" />
-    <Compile Include="Assets\Menus\SelectNivel\Nivel 1\Scripts\FollowLevel1.cs" />
-    <Compile Include="Assets\Menus\SelectNivel\Nivel 1\Scripts\HealthBarLevel1.cs" />
-    <Compile Include="Assets\HealthBar.cs" />
+    <Compile Include="Assets\Nivel2\Scrips\ToxicPoollController.cs" />
+    <Compile Include="Assets\Nivel2\Scrips\HealtBar.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\ToxicPoolControllerLevel1.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\MovementControllerLevel1.cs" />
     <Compile Include="Assets\Nivel3\Scripts\ToxicPoolControllerLevelThree.cs" />
     <Compile Include="Assets\SeleccionPersonaje\CharacterLoader.cs" />
     <Compile Include="Assets\ReglasJuego\Scripts\PantallaReglas.cs" />
     <Compile Include="Assets\Menus\Menú\cambiarNivel.cs" />
     <Compile Include="Assets\PuntuacionesManager\PuntuacionManager.cs" />
-    <Compile Include="Assets\Menus\SelectNivel\Nivel 1\Scripts\ToxicPoolControllerLevel1.cs" />
+    <Compile Include="Assets\Nivel 1\Scripts\FollowLevel1.cs" />
+    <Compile Include="Assets\Nivel 1\CambioNivel.cs" />
     <Compile Include="Assets\PuntuacionesManager\MenuManager.cs" />
     <Compile Include="Assets\Nivel3\Scripts\AudioManager.cs" />
-    <Compile Include="Assets\MovementController.cs" />
     <Compile Include="Assets\ScriptAssigner.cs" />
     <Compile Include="Assets\Nivel3\Scripts\MovementControllerLevelThree.cs" />
-    <Compile Include="Assets\WasteController.cs" />
+    <Compile Include="Assets\Nivel2\Scrips\WasteController.cs" />
     <Compile Include="Assets\Menus\Menú\levelManager.cs" />
-    <Compile Include="Assets\Menus\SelectNivel\Nivel 1\Scripts\MovementControllerLevel1.cs" />
     <Compile Include="Assets\SeleccionPersonaje\CharacterSelectionManager.cs" />
     <Compile Include="Assets\Nivel3\Scripts\WasteControllerLevelThree.cs" />
   </ItemGroup>

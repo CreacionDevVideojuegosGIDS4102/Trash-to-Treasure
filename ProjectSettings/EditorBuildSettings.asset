@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: "Assets/Menus/Men\xFA/Men\xFA.unity"
     guid: d17127aba8828eb4e9f29d9520b247b3
   - enabled: 1
+    path: "Assets/MenuOpciones/Scenes/Men\xFA/Opciones.unity"
+    guid: b71e9549810eb034db8d8f9515f5e6f1
+  - enabled: 1
     path: Assets/SeleccionarPersonaje.unity
     guid: 80bc181a2e395494c987f9af886e67d1
   - enabled: 1
@@ -21,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Menus/SelectNivel/Nivel 1/LevelOne.unity
     guid: 8031f01717c85734fa086e5d334eb181
   - enabled: 1
-    path: Assets/Menus/LevelTwo.unity
+    path: Assets/Nivel2/LevelTwo.unity
     guid: d2da5db2f6df013458a97cccff04a10a
   - enabled: 1
     path: Assets/Menus/SelectNivel/Nivel 1/LevelThree.unity

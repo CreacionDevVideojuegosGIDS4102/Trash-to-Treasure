@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class CharacterLoader : MonoBehaviour
@@ -55,6 +57,22 @@ public class CharacterLoader : MonoBehaviour
                 else
                 {
                     Debug.LogError("No se encontró el script FollowLevelOne en la cámara principal.");
+                }
+                break;
+
+            case "LevelTwo":
+                playerInstance.AddComponent<MovementController>();
+                Debug.Log("Script asignado: MovementController.");
+
+                Follow cameraFollow = Camera.main.GetComponent<Follow>();
+                if (cameraFollow != null)
+                {
+                    cameraFollow.SetLevelSpecificBehavior("LevelTwo");
+                    cameraFollow.AssignPlayer(playerInstance);
+                }
+                else
+                {
+                    Debug.LogError("No se encontró el script Follow en la cámara principal.");
                 }
                 break;
 
