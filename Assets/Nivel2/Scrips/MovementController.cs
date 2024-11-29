@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class MovementController : MonoBehaviour
 {
@@ -10,7 +12,7 @@ public class MovementController : MonoBehaviour
     public float movementSpeed = 3.0f;
     public int playerLife = 100;
     public int organicWasteCollected = 0;
-    //public int organicWasteToNextLevel = 30;
+    public int organicWasteToNextLevel = 10;
 
     private Vector2 movement = new Vector2();
     private Rigidbody2D rb2D;
@@ -37,7 +39,7 @@ public class MovementController : MonoBehaviour
     void Update()
     {
         UpdateState();
-        
+
     }
 
     private void UpdateState()
@@ -93,7 +95,7 @@ public class MovementController : MonoBehaviour
         }
     }
 
-      public void CollectOrganicWaste()
+    public void CollectOrganicWaste()
     {
         organicWasteCollected++;
         UpdateOrganicWasteCounter();
@@ -102,6 +104,12 @@ public class MovementController : MonoBehaviour
         if (organicWasteCollected % 10 == 0)
         {
             IncreaseLife(10);
+        }
+        // Verifica si ya se recolectaron todas
+        if (organicWasteCollected >= organicWasteToNextLevel)
+        {
+            Debug.Log("Nivel completado, cambiando al siguiente nivel");
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
@@ -112,7 +120,7 @@ public class MovementController : MonoBehaviour
 
     }
 
-     private void IncreaseLife(int amount)
+    private void IncreaseLife(int amount)
     {
         playerLife = Mathf.Min(playerLife + amount, 100); // No permite que la vida supere 100
         UpdateHealthBar();
