@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class WasteControllerLevel1 : MonoBehaviour
 {
     public AudioClip inorganicWasteSound;
@@ -27,8 +28,7 @@ public class WasteControllerLevel1 : MonoBehaviour
             if (gameObject.CompareTag("Organica"))
             {
                 Destroy(gameObject);
-                movementController.organicWasteCollected++;
-                movementController.UpdateOrganicWasteCounter();
+                movementController.CollectOrganicWaste(); // Usa la nueva lógica
             }
             else if (gameObject.CompareTag("Inorganica"))
             {

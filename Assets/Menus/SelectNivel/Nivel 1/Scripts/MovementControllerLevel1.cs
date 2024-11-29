@@ -110,7 +110,7 @@ public class MovementControllerLevel1 : MonoBehaviour
         UpdateHealthBar();
     }
 
-     private void IncreaseLife(int amount)
+    private void IncreaseLife(int amount)
     {
         playerLife = Mathf.Min(playerLife + amount, 100); // No permite que la vida supere 100
         UpdateHealthBar();
