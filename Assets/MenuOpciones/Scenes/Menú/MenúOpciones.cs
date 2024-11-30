@@ -1,4 +1,4 @@
-/*using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
@@ -29,4 +29,4 @@ public class MenúOpciones : MonoBehaviour
     {
         SceneManager.LoadScene("Menú"); // Asegúrate de que "Menú" sea el nombre exacto de la escena principal.
     }
-}*/
+}

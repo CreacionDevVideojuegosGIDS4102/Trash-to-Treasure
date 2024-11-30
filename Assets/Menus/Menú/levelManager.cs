@@ -8,13 +8,13 @@ public class levelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void BotonStart()
@@ -22,6 +22,11 @@ public class levelManager : MonoBehaviour
 
         SceneManager.LoadScene(1);
 
+    }
+    // Método para ir a la escena de Opciones
+    public void BotonOpciones()
+    {
+        SceneManager.LoadScene(2); // Índice de la escena de Opciones
     }
 
     public void BotonSalir()
