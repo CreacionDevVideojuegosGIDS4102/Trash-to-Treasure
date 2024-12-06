@@ -92,6 +92,22 @@ public class CharacterLoader : MonoBehaviour
                 }
                 break;
 
+            case "LevelFour":
+                playerInstance.AddComponent<MovementControllerLevelFour>();
+                Debug.Log("Script asignado: MovementControllerLevelFour.");
+
+                // Asigna el script FollowLevelFour a la cámara
+                FollowLevelFour cameraFollowFour = Camera.main.GetComponent<FollowLevelFour>();
+                if (cameraFollowFour != null)
+                {
+                    cameraFollowFour.AssignPlayer(playerInstance);
+                }
+                else
+                {
+                    Debug.LogError("No se encontró el script FollowLevelFour en la cámara principal.");
+                }
+                break;
+
             default:
                 Debug.LogWarning("No se han configurado scripts para este nivel.");
                 break;

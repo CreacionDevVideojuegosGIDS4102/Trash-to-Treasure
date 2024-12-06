@@ -70416,7 +70416,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 3014417673264035543}
   healthBar: {fileID: 4523771255054186359}
-  movementSpeed: 8
+  movementSpeed: 6
   playerLife: 100
   organicWasteCollected: 0
   organicWasteToNextLevel: 30

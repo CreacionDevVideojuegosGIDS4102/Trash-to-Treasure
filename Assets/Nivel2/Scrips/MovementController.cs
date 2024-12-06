@@ -9,7 +9,7 @@ public class MovementController : MonoBehaviour
 {
     public Text organicWasteCounterText;
     public Image healthBar;
-    public float movementSpeed = 3.0f;
+    public float movementSpeed = 6.0f;
     public int playerLife = 100;
     public int organicWasteCollected = 0;
     public int organicWasteToNextLevel = 10;

@@ -262,7 +262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   organicWasteCounterText: {fileID: 922203724}
   healthBar: {fileID: 4523771255054186359}
-  movementSpeed: 5
+  movementSpeed: 6
   playerLife: 100
   organicWasteCollected: 0
   organicWasteToNextLevel: 10
@@ -4617,11 +4617,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7430994824765782841, guid: 09b7ace451390f04eaeb9254b9ce199d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.06
+      value: 185.95
       objectReference: {fileID: 0}
     - target: {fileID: 7430994824765782841, guid: 09b7ace451390f04eaeb9254b9ce199d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.26
+      value: -18.16
       objectReference: {fileID: 0}
     - target: {fileID: 7833513590534417006, guid: 09b7ace451390f04eaeb9254b9ce199d, type: 3}
       propertyPath: m_BodyType
@@ -7058,6 +7058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gafas (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 998669062355273882, guid: 5b2dfa5db95feb1438927770bf2950ae, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
+      objectReference: {fileID: 0}
     - target: {fileID: 6973428491567939538, guid: 5b2dfa5db95feb1438927770bf2950ae, type: 3}
       propertyPath: m_LocalPosition.x
       value: 99.8
@@ -7183,6 +7187,10 @@ PrefabInstance:
     - target: {fileID: 190108086377879581, guid: 2ee07731075ed524698f75aeeff42696, type: 3}
       propertyPath: m_Name
       value: gafas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 190108086377879581, guid: 2ee07731075ed524698f75aeeff42696, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
       objectReference: {fileID: 0}
     - target: {fileID: 1688108671349859616, guid: 2ee07731075ed524698f75aeeff42696, type: 3}
       propertyPath: m_BodyType
@@ -7314,6 +7322,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gafas
       objectReference: {fileID: 0}
+    - target: {fileID: 2425318376130976336, guid: 72b56b2cee0353447bcd138dc1ec915c, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
+      objectReference: {fileID: 0}
     - target: {fileID: 4851595935002462188, guid: 72b56b2cee0353447bcd138dc1ec915c, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -7431,6 +7443,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 20-Patchwork (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4513412625910034562, guid: 617612372e1ef3c428a10b1d15790a8e, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7447,6 +7463,10 @@ PrefabInstance:
     - target: {fileID: 376668981461873912, guid: 9dceedcae4da25a4c8abddcbd6f678a5, type: 3}
       propertyPath: m_Name
       value: 20-Patchwork (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 376668981461873912, guid: 9dceedcae4da25a4c8abddcbd6f678a5, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
       objectReference: {fileID: 0}
     - target: {fileID: 4267631288450105428, guid: 9dceedcae4da25a4c8abddcbd6f678a5, type: 3}
       propertyPath: m_BodyType
@@ -7609,6 +7629,10 @@ PrefabInstance:
     - target: {fileID: 5286907331472362451, guid: bc6e40829a0c457409deb9b424c351e6, type: 3}
       propertyPath: m_Name
       value: gafas (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5286907331472362451, guid: bc6e40829a0c457409deb9b424c351e6, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
       objectReference: {fileID: 0}
     - target: {fileID: 8682390414215450587, guid: bc6e40829a0c457409deb9b424c351e6, type: 3}
       propertyPath: m_SortingLayer
@@ -7837,6 +7861,10 @@ PrefabInstance:
     - target: {fileID: 4115530447390738844, guid: 7dec610d144ec1f40ba3adf4298c0d75, type: 3}
       propertyPath: m_Name
       value: 20-Patchwork (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4115530447390738844, guid: 7dec610d144ec1f40ba3adf4298c0d75, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
       objectReference: {fileID: 0}
     - target: {fileID: 6019531273205825991, guid: 7dec610d144ec1f40ba3adf4298c0d75, type: 3}
       propertyPath: m_BodyType
@@ -8068,6 +8096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bote (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1676645225143753008, guid: add151e116dfaa240b86cb576bcde47b, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
+      objectReference: {fileID: 0}
     - target: {fileID: 4180982190170622493, guid: add151e116dfaa240b86cb576bcde47b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -46.5
@@ -8246,6 +8278,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: gafas (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1293936404850936533, guid: ed3919fd953b48048b7594e6caa9b3fd, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
+      objectReference: {fileID: 0}
     - target: {fileID: 3355114558222804970, guid: ed3919fd953b48048b7594e6caa9b3fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 182.7
@@ -8314,6 +8350,10 @@ PrefabInstance:
     - target: {fileID: 2755045978293012721, guid: 7c1eea45093e66845b755d42ce64f99f, type: 3}
       propertyPath: m_Name
       value: bote (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2755045978293012721, guid: 7c1eea45093e66845b755d42ce64f99f, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
       objectReference: {fileID: 0}
     - target: {fileID: 4756677199419841431, guid: 7c1eea45093e66845b755d42ce64f99f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8416,6 +8456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bote (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4345821348653330515, guid: 97def8a67b8e34e45ad5a6b181016f71, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
+      objectReference: {fileID: 0}
     - target: {fileID: 5277998935408607629, guid: 97def8a67b8e34e45ad5a6b181016f71, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -8444,6 +8488,10 @@ PrefabInstance:
     - target: {fileID: 6707997685128457279, guid: c509055ae2186f7498aa053640d509fd, type: 3}
       propertyPath: m_Name
       value: 20-Patchwork (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6707997685128457279, guid: c509055ae2186f7498aa053640d509fd, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
       objectReference: {fileID: 0}
     - target: {fileID: 8819005391711730344, guid: c509055ae2186f7498aa053640d509fd, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8571,6 +8619,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bote (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6567712088391393184, guid: bdbfbb7c77541f548ad540158098d5b8, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
+      objectReference: {fileID: 0}
     - target: {fileID: 7553788051186071938, guid: bdbfbb7c77541f548ad540158098d5b8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 54.3
@@ -8628,6 +8680,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: 20-Patchwork (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3018579351786264429, guid: 2c8910415ce543c43ae2b69ec97f99d1, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
+      objectReference: {fileID: 0}
     - target: {fileID: 3614682107527246062, guid: 2c8910415ce543c43ae2b69ec97f99d1, type: 3}
       propertyPath: m_SortingLayer
       value: 4
@@ -8638,11 +8694,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4184999300086529988, guid: 2c8910415ce543c43ae2b69ec97f99d1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.8
+      value: 25.23
       objectReference: {fileID: 0}
     - target: {fileID: 4184999300086529988, guid: 2c8910415ce543c43ae2b69ec97f99d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.4
+      value: -18.42
       objectReference: {fileID: 0}
     - target: {fileID: 4184999300086529988, guid: 2c8910415ce543c43ae2b69ec97f99d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8748,6 +8804,10 @@ PrefabInstance:
     - target: {fileID: 9005240030888761173, guid: d14015298ce5c2344a5a364fb868c4a4, type: 3}
       propertyPath: m_Name
       value: bote
+      objectReference: {fileID: 0}
+    - target: {fileID: 9005240030888761173, guid: d14015298ce5c2344a5a364fb868c4a4, type: 3}
+      propertyPath: m_TagString
+      value: Inorganica
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
